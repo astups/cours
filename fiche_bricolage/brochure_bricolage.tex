@@ -1,0 +1,55 @@
+\documentclass[foldmark,notumble]{leaflet}
+%\documentclass[foldmark,tumble]{leaflet} %Peut être nécessaire pour l'impression
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+
+\title{Conseils de Bricolage}
+\author{ASTUPS}
+\date{2014/2015 - v1.0}
+
+%Commande du paquet leaflet
+%CutLine : dessine une ligne verticale en pointillés avec un ciseau, en paramètre la page concernée
+%CutLine* : idem à CutLine sans le ciseau
+%AddToBackground : Met une image en font d'une portion de la brochure
+%AddToBackground* : Met une image en font d'une page entière (trois portions de brochure)
+
+%\AddToBackground{6}{%  Background of a small page
+%  \put(0,0){\textcolor{YellowOrange}{\rule{\paperwidth}{\paperheight}}}}
+
+
+%\AddToBackground*{2}{% Background of a large page
+%  \put(\LenToUnit{.5\paperwidth},\LenToUnit{.5\paperheight}){%
+%    \makebox(0,0)[c]{%
+%      \resizebox{.9\paperwidth}{!}{\rotatebox{35.26}{%
+%        \textsf{\textbf{\textcolor{LIGHTGRAY}{CLEMSON}}}}}}}}
+
+\CutLine*{1}
+\CutLine*{3}
+\CutLine*{4}
+\CutLine*{6}
+
+\begin{document}
+\thispagestyle{empty}
+
+\maketitle
+
+\input{generale.tex}
+
+\newpage
+\input{tournevis.tex}
+
+\input{perceuse.tex}
+
+\input{fer_a_souder.tex}
+
+\input{colle.tex}
+
+\input{scie_sauteuse.tex}
+
+\newpage
+\input{contact.tex}
+\end{document}

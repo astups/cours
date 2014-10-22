@@ -1,0 +1,47 @@
+\documentclass[a1,portrait]{a0poster}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+\usepackage[left=2cm,right=2cm,bottom=2cm,top=0cm]{geometry}
+\usepackage{flowfram}
+\usepackage{template_poster}
+
+\title{Conseils de Bricolage}
+\author{ASTUPS}
+\date{2014/2015 - v1.0}
+
+%--------------------------------
+% Edit flowfram options to create two columns, change the margin, ...
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\baselineskip}
+
+\twocolumntop{static}{12cm}
+
+\setstaticframe{1}{label={title}}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{staticcontents*}{title}
+\maketitle
+
+\input{generale.tex}
+
+\end{staticcontents*}
+
+\input{tournevis.tex}
+
+\input{perceuse.tex}
+
+\input{fer_a_souder.tex}
+
+\input{colle.tex}
+
+\input{scie_sauteuse.tex}
+
+\input{contact.tex}
+\end{document}
