@@ -15,9 +15,9 @@ all: brochure poster
 force: clean-all $(output)
 
 %.pdf: %.tex $(files)
-	echo "Compile the LaTeX" > /dev/stderr
+	@echo "Compile the LaTeX" > /dev/stderr
 	pdflatex $<
-	echo "Compile the LaTeX" > /dev/stderr
+	@echo "Compile the LaTeX" > /dev/stderr
 	pdflatex $<
 
 #Add dependency to the sty

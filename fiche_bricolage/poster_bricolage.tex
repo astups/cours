@@ -4,15 +4,19 @@
 \usepackage[utf8]{inputenc}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{color}
 \usepackage[francais]{babel}
 \usepackage[left=2cm,right=2cm,bottom=2cm,top=0cm]{geometry}
 \usepackage{flowfram}
 \usepackage{template_poster}
+\usepackage[bottom]{footmisc}
 
 \AtBeginDocument{\def\labelitemi{$\bullet$}}
 \AtBeginDocument{\def\labelitemii{$\circ$}}
 \AtBeginDocument{\def\labelitemiii{--}}
 %\AtBeginDocument{\def\labelitemiv{$\bullet$}}
+
+\newcommand{\todo}[1]{\textbf{\textit{\color{red} #1}}}
 
 \pdfinfo{
 /Author (ASTUPS)
@@ -22,7 +26,7 @@
 }
 
 \title{Conseils de Bricolage}
-\author{ASTUPS}
+\author{ASTUPS\\{\small Association des Sciences et Techniques de l'Université Paul Sabatier}}
 \date{2014/2015 - v1.0}
 
 %--------------------------------
@@ -30,7 +34,7 @@
 \setlength{\vcolumnsep}{\baselineskip}
 \setlength{\columnsep}{\baselineskip}
 
-\twocolumntop{static}{12cm}
+\twocolumntop{static}{25cm}
 
 \setstaticframe{1}{label={title}}
 
@@ -41,10 +45,15 @@
 \begin{staticcontents*}{title}
 \maketitle
 
+\newcommand{\tailleRegles}{\Large}
 \input{generale.tex}
 
 \end{staticcontents*}
 
+\small
+
+\def\tailleImageTournevis{0.3\columnwidth}
+\def\formCoefficient{0.3}
 \input{tournevis.tex}
 
 \input{perceuse.tex}
